@@ -12,3 +12,14 @@
 5. pages/elements.py содержит вспомогательный класс для определения веб-элементов на веб-страницах.
 
 6. tests_rostelecom.py содержит тесты для Ростелекома ( https://b2c.passport.rt.ru/ )
+
+
+Запуск тестов
+1. Установите все требования:
+    pip install -r requirements.txt
+    
+2. Загрузите Selenium WebDriver с https://chromedriver.chromium.org/downloads (выберите версию, совместимую с вашим браузером)
+
+
+3. Запустите тесты:
+    pytest -v --driver Chrome --driver-path /chromedriver tests_rostelecom.py
